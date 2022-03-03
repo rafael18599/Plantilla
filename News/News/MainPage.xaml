@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="News.MainPage">
-
-    <StackLayout>
+             x:Class="News.MainPage"
+             BackgroundImageSource="pixel2.jpg">
+    <StackLayout >
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"></RowDefinition>
@@ -15,11 +15,78 @@
             </Grid.ColumnDefinitions>
 
             <StackLayout></StackLayout>
-            
+
         </Grid>
-        <StackLayout HorizontalOptions="Center" Grid.Row="1" BackgroundColor="Red">
-            
+
+        <StackLayout HorizontalOptions="Center" Grid.Row="1" BackgroundColor="Transparent">
+            <StackLayout BackgroundColor="Transparent">
+                <Label Text="¡BIENVENIDO!" HorizontalOptions="Center" FontSize="35" VerticalOptions="Center" TextColor="White" FontAttributes="Bold"></Label>
+            </StackLayout>
+            <StackLayout BackgroundColor="Transparent" Margin="0">
+                <Frame Margin="60" HasShadow="True">
+                    <Grid  BackgroundColor="White">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout>
+
+                        </StackLayout>
+
+                        <Frame BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0">
+                            <StackLayout>
+                                <Label Text="E-MAIL" TextColor="Black" FontAttributes="Bold"></Label>
+                                <Entry Placeholder="Inserte e-mail"></Entry>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0">
+                            <StackLayout>
+                                <Label Text="CONTRASEÑA" TextColor="Black" FontAttributes="Bold"></Label>
+                                <Entry Placeholder="Inserte Constraseña" IsPassword="True"></Entry>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0">
+                            <StackLayout Orientation="Horizontal">
+                                <CheckBox BackgroundColor="Transparent"></CheckBox>
+                                <Label Text="Acepto los términos y condiciones." BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="Center"
+                                   FontAttributes="Bold" TextColor="#323232"></Label>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0">
+                            <StackLayout Orientation="Horizontal">
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout Grid.Column="0" BackgroundColor="Transparent" >
+                                        <Button Text="¿Ayuda?" BackgroundColor="Transparent" FontSize="15" FontAttributes="Bold" BorderColor="Black">
+                                        </Button>
+                                    </StackLayout>
+                                    <StackLayout Grid.Column="1" BackgroundColor="Transparent">
+                                        <Button Text="Registrar" BackgroundColor="Transparent" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold"
+                                            >
+                                        </Button>
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </StackLayout>
         </StackLayout>
+        <Label Text="Created by Rafael Bojorquez" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="15" TextColor="White" BackgroundColor="Transparent"></Label>
     </StackLayout>
 
 </ContentPage>

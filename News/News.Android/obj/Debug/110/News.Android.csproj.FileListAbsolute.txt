@@ -574,3 +574,4 @@ C:\Users\sistemas03\source\repos\PlantillasXamarin\News\News\News.Android\obj\De
 C:\Users\sistemas03\source\repos\PlantillasXamarin\News\News\News.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\sistemas03\source\repos\PlantillasXamarin\News\News\News.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\sistemas03\source\repos\PlantillasXamarin\News\News\News.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\sistemas03\source\repos\PlantillasXamarin\News\News\News.Android\obj\Debug\110\res\drawable\pixel2.jpg
